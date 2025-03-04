@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure the Vault</title>
+    <!-- add a link to the javascript file -->
+    <script src="script.js" defer></script> 
+    <!-- add a link to the style.css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="alert"></div>
+    <!-- create an alert box that can reference the variables in script.js -->
+    <script>
+        // define constants within a script tag
+      const code1 = 5*2;
+      const code2 = 400/10;
+      const code3 = (5*6)+9;
+        // use the getElementById and innerText functions to display the message and variables
+      document.getElementById("alert").innerText=`You have received this message because you have been chosen to open an important vault. Here is the secret combination: ${code1} - ${code2} - ${code3}`;
+    </script>
+  </body>
+</html>
